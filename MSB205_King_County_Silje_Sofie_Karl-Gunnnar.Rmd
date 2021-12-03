@@ -51,64 +51,62 @@ library(lubridate)
 options(scipen = 999)
 ```
 
-
+```{=tex}
 \newpage 
-\tableofcontents 
-
+\tableofcontents
+```
 \newpage
 
 # 1. Review of paper: @bishop2020
 
-@bishop2020 beskriver i sin artikkel den beste praksisen for å bruke hedoniske modeller for å måle  marginal «willingness to pay», også kalt for MWTP for å måle miljømessige kvaliteter i boligmarkedet. 
-Studiene som bidro med å etablere den hedoniske modellen brukte rik (avansert) data fra boligmarkedet i storbyområder i en avansert økonomi. 
+@bishop2020 beskriver i sin artikkel den beste praksisen for å bruke hedoniske modeller for å måle marginal «willingness to pay», også kalt for MWTP for å måle miljømessige kvaliteter i boligmarkedet.
+Studiene som bidro med å etablere den hedoniske modellen brukte rik (avansert) data fra boligmarkedet i storbyområder i en avansert økonomi.
 Datene beskriver blant annet transaksjoner, karakteristikker, fasiliteter.
 Økt tilgang på slik data skaper nye muligheter for analyser med bruk av hedoniske modeller.
 
 Rosens første og andre steg blir ansett som beste praksis for den hedoniske modellen.
 
-Rosens første steg omhandler å definere markedet slik at man vil tilfredsstille «law of one function». 
-Det vil si at man vil selge hus som er identiske, til den samme prisen i det gitte markedet. 
-Rosens andre steg er å samle inn data. 
-Når man samler inn data er det mest oppnåelig å ha et tilfeldig utvalg. 
-Datainnsamlingen i hedoniske eiendomsverdi-studier fokuserer hovedsakelig på eneboliger. 
+Rosens første steg omhandler å definere markedet slik at man vil tilfredsstille «law of one function».
+Det vil si at man vil selge hus som er identiske, til den samme prisen i det gitte markedet.
+Rosens andre steg er å samle inn data.
+Når man samler inn data er det mest oppnåelig å ha et tilfeldig utvalg.
+Datainnsamlingen i hedoniske eiendomsverdi-studier fokuserer hovedsakelig på eneboliger.
 
 Når det kommer til å definere markedet, finnes det to alternativer.
-Man kan definere markedet som et stort byområde, og over kort tid. 
-Det er også muligheter for å kombinere flere datasett fra større områder og over lengre tid. 
-Det er viktig å definere markedet som et byområde og over kort tid slik at man ikke bryter «the law of one price function». 
-Man unngår dermed å ta stilling til at befolkninger skifter arbeid, flyttekostander det medfølger og at man unngår å ta stilling til økonomiske konjunkturer, som videre kan påvirke MWTP. 
+Man kan definere markedet som et stort byområde, og over kort tid.
+Det er også muligheter for å kombinere flere datasett fra større områder og over lengre tid.
+Det er viktig å definere markedet som et byområde og over kort tid slik at man ikke bryter «the law of one price function».
+Man unngår dermed å ta stilling til at befolkninger skifter arbeid, flyttekostander det medfølger og at man unngår å ta stilling til økonomiske konjunkturer, som videre kan påvirke MWTP.
 Disse elementene/faktorene er også utfordringene ved å velge det andre alternativet, som er å definere markedet over store geografiske områder og over en lengre periode.
 
-Rosens andre steg er som tidligere nevnt, å samle inn data. 
-Når man samler inn data er det mest oppnåelig å ha et tilfeldig utvalg. 
-Datainnsamlingen i hedonisk eiendomsverdi-studier fokuserer hovedsakelig på eneboliger. 
+Rosens andre steg er som tidligere nevnt, å samle inn data.
+Når man samler inn data er det mest oppnåelig å ha et tilfeldig utvalg.
+Datainnsamlingen i hedonisk eiendomsverdi-studier fokuserer hovedsakelig på eneboliger.
 
-Når man samler inn data, bør man unngå å ha med data som har feilledd. 
-Dette kan innebære data om hus som ikke har vært like tilgjengelig på markedet. 
-Eksempelvis at kjøper og selger har samme etternavn i et salg. 
-Det er også vanlig å ikke ta med salg gjennom eiendomsbedrift på bakgrunn av at eiendommen kan ha kvalitetsproblemer som ikke er dokumentert i rapporten. 
+Når man samler inn data, bør man unngå å ha med data som har feilledd.
+Dette kan innebære data om hus som ikke har vært like tilgjengelig på markedet.
+Eksempelvis at kjøper og selger har samme etternavn i et salg.
+Det er også vanlig å ikke ta med salg gjennom eiendomsbedrift på bakgrunn av at eiendommen kan ha kvalitetsproblemer som ikke er dokumentert i rapporten.
 Det er også vesentlig å fjerne data som skiller seg ut, som eksempelvis at et hus har 1000 soverom.
 
-Ved bruk av den hedoniske modellen må forskeren gjøre rede for hva man finner av fasiliteter i området huset er. 
-Man må dermed formulere en objektiv modell som måler romlig variasjon av fasiliteter. 
+Ved bruk av den hedoniske modellen må forskeren gjøre rede for hva man finner av fasiliteter i området huset er.
+Man må dermed formulere en objektiv modell som måler romlig variasjon av fasiliteter.
 Dette kan være utfordrende for forskeren ettersom dataene kan være ujevne.
-Dersom data for eneboliger ikke er tilgjengelige, finnes det muligheter for å bruke annen data, men det finnes en rekke utfordringer ved alternativene. 
-Man kan predikere priser gjennom eksempelvis spørreundersøkelser av privatpersoner og bedrifter. 
-Problemer med predikterte priser er at det kan føre til målefeil som er korrelert med kjøperens demografi (subjektive mening), karakteristikker og fasiliteter i nabolaget. 
+Dersom data for eneboliger ikke er tilgjengelige, finnes det muligheter for å bruke annen data, men det finnes en rekke utfordringer ved alternativene.
+Man kan predikere priser gjennom eksempelvis spørreundersøkelser av privatpersoner og bedrifter.
+Problemer med predikterte priser er at det kan føre til målefeil som er korrelert med kjøperens demografi (subjektive mening), karakteristikker og fasiliteter i nabolaget.
 
-Leiepriser er også brukbart til å estimere salgspriser på boliger, men de kan være mer omfattende å arbeide med. 
-Ettersom leiekontrakter kan være av forskjellig karakter, som eksempelvis hvem av kjøper og leier som tar vedlikeholdskostnader og på bakgrunn av kort tidsperiode for leiekontrakter vil folk bry seg mindre om fasiliteter og lignende i nabolaget. 
-På en annen side kan data av leiepriser være nyttig for nabolag hvor majoriteten leier. 
+Leiepriser er også brukbart til å estimere salgspriser på boliger, men de kan være mer omfattende å arbeide med.
+Ettersom leiekontrakter kan være av forskjellig karakter, som eksempelvis hvem av kjøper og leier som tar vedlikeholdskostnader og på bakgrunn av kort tidsperiode for leiekontrakter vil folk bry seg mindre om fasiliteter og lignende i nabolaget.
+På en annen side kan data av leiepriser være nyttig for nabolag hvor majoriteten leier.
 
-Det finnes også muligheter for å estimere den hedoniske modellen ved å se på tomter, på bakgrunn av at man kan estimere hvordan priser varierer med ulike områdekarakteristikker. 
+Det finnes også muligheter for å estimere den hedoniske modellen ved å se på tomter, på bakgrunn av at man kan estimere hvordan priser varierer med ulike områdekarakteristikker.
 Det kan oppstå en "bias" (skjevfordeling) i prisfunksjonen dersom vesentlige faktorer som eksempelvis soneindelinger, lover og regler i det observerte området og tilgang til vann og kloakk ikke er observert.
 
-Det finnes to problemer knyttet til utelatte variabler (*omitted variable bias*) når man skal estimere hedonisk prismodeller. 
-Den første omhandler at det er usannsynlig at man som forsker får tilgang på all informasjon om fasiliteter som er viktige for kjøperne. 
-Det andre handler om at data som er viktige for noen huskjøpere, ikke er observerte eller utelukket i modellen, og som fører til en bias. 
-Eksempelvis dersom man flytter til et nabolag med høy velstand og luftkvalitet, men at man deretter også er interessert i bedre offentligskole, noe som medfører at luftkvalitet vil være skjevfordelt ettersom skolevariabelen ikke er inkludert i modellen. 
-
-
+Det finnes to problemer knyttet til utelatte variabler (*omitted variable bias*) når man skal estimere hedonisk prismodeller.
+Den første omhandler at det er usannsynlig at man som forsker får tilgang på all informasjon om fasiliteter som er viktige for kjøperne.
+Det andre handler om at data som er viktige for noen huskjøpere, ikke er observerte eller utelukket i modellen, og som fører til en bias.
+Eksempelvis dersom man flytter til et nabolag med høy velstand og luftkvalitet, men at man deretter også er interessert i bedre offentligskole, noe som medfører at luftkvalitet vil være skjevfordelt ettersom skolevariabelen ikke er inkludert i modellen.
 
 # 2. House Sales in King County, WA
 
@@ -149,7 +147,6 @@ kc_house_data_sf <-  kc_house_data_sf %>%
   )
 ```
 
-
 # 3. Family income
 
 ```{r}
@@ -188,7 +185,6 @@ kc_wadoh_map <- kc_wadoh_map %>%
 class(kc_wadoh_map)
 ```
 
-
 ```{r}
 asc_b19101_fam_inc <- read.dbf("maps/censusSHP/acs_b19101_familyincome.dbf")
 attach(asc_b19101_fam_inc)
@@ -219,7 +215,6 @@ kc_wadoh_map_2 <- left_join(
 ```{r}
 class(kc_wadoh_map_2)
 ```
-
 
 ```{r}
 kc_tracts10 <- here("maps/censusSHP/tracts10.shp") %>% 
@@ -273,7 +268,6 @@ st_write(kc_tracts10_shore_env_var, "maps/kc_tracts10_shore_env_var.gpkg", appen
 # summary(kc_tracts10_env_data)
 ```
 
-
 ```{r}
 # summary(kc_tracts10_shore_env_var)
 ```
@@ -312,61 +306,61 @@ st_write(kc_houses_env_var_omit, "maps/kc_houses_env_var_omit.gpkg", append = FA
 
 ## 3 nærmeste naboer
 
-![](screens/knear3.jpg){width=50%, height=50%}
+![](screens/knear3.jpg){width="50%," height="50%"}
 
 Vektmatrise med 3 nærmeste naboer.
 
 ### Små og dyre boliger
 
-![](screens/high_low_kn3.jpg){width=50%, height=50%}
+![](screens/high_low_kn3.jpg){width="50%," height="50%"}
 
 Små og dyre boliger markert i gule punkter.
 
 ### Store og dyre boliger
 
-![](screens/high_high_kn3.jpg){width=50%, height=50%}
+![](screens/high_high_kn3.jpg){width="50%," height="50%"}
 
 Store og dyre boliger markert i røde punkter.
 
 ### Store og billige boliger
 
-![](screens/low_high_kn3.jpg){width=50%, height=50%}
+![](screens/low_high_kn3.jpg){width="50%," height="50%"}
 
 Store og billige boliger markert i rosa punkter.
 
 ### Små og billige boliger
 
-![](screens/low_low_kn3.jpg){width=50%, height=50%}
+![](screens/low_low_kn3.jpg){width="50%," height="50%"}
 
 Små og billige boliger markert i blå punkter.
 
 ## Nærmeste 10 naboer
 
-![](screens/knear10.jpg){width=50%, height=50%}
+![](screens/knear10.jpg){width="50%," height="50%"}
 
 Vektmatrise med 10 nærmeste naboer
 
 ### Små og dyre boliger
 
-![](screens/high_low_kn10.jpg){width=50%, height=50%}
+![](screens/high_low_kn10.jpg){width="50%," height="50%"}
 
 Små og dyre boliger markert i gule punkter.
 
 ### Store og dyre boliger
 
-![](screens/high_high_kn10.jpg){width=50%, height=50%}
+![](screens/high_high_kn10.jpg){width="50%," height="50%"}
 
 Store og dyre boliger markert i røde punkter.
 
 ### Store og billige boliger
 
-![](screens/low_high_kn10.jpg){width=50%, height=50%}
+![](screens/low_high_kn10.jpg){width="50%," height="50%"}
 
 Store og billige boliger markert i rosa punkter.
 
 ### Små og billige boliger
 
-![](screens/low_low_kn10.jpg){width=50%, height=50%}
+![](screens/low_low_kn10.jpg){width="50%," height="50%"}
 
 Små og billige boliger markert i blå punkter.
 
@@ -374,19 +368,17 @@ Små og billige boliger markert i blå punkter.
 
 Vi har sett på fordelingen av boliger sett i på pris i forhold til størrelse.
 Fordelingen er relativt lik både ved *knear = 3* og *knear = 10*.
-Vi kan se at små og billige boliger i hovedsak er sentrert rundt sentrum av Seattle, med noe spredt ellers i King County, WA.
-På den andre enden av skalen ser vi at store og dyre boliger ligger Bellevue/Redmond-området øst for Seattle, også her med noe spredning.
+Vi kan se at små og billige boliger i hovedsak er sentrert rundt sentrum av Seattle, med noe spredt ellers i King County, WA. På den andre enden av skalen ser vi at store og dyre boliger ligger Bellevue/Redmond-området øst for Seattle, også her med noe spredning.
 Små og dyre boliger ligger i all hovedsak tett rundt Seattle sentrum, med noen få observasjoner spredt rundt omkring.
 Store og billige boliger ligger (kanskje ikke uventet) spredt i landlige områder.
 
-Ved å se på Morans I, så får vi verdier på 0.404 ved *knear = 3* og 0.351 ved *knear = 10*. 
+Ved å se på Morans I, så får vi verdier på 0.404 ved *knear = 3* og 0.351 ved *knear = 10*.
 Positive verdier taler for klynging, noe vi kan se tendenser til (perfekt klynging = 1).
-Vi ser også en del tilfeldig spredning i observasjonene, noe som gir mening da Morans I verdiene våre er nærmere 0 enn 1 (perfekt tilfeldighet = 0). 
+Vi ser også en del tilfeldig spredning i observasjonene, noe som gir mening da Morans I verdiene våre er nærmere 0 enn 1 (perfekt tilfeldighet = 0).
 
 ### Regresjonstest i Geoda
 
-![Test av regresjonsanalyse i Geoda.](screens/reg_test_geoda.jpg){width=50%, height=50%}
-
+![Test av regresjonsanalyse i Geoda.](screens/reg_test_geoda.jpg){width="50%," height="50%"}
 
 # 6. Hedoniske modeller
 
@@ -396,11 +388,9 @@ Vi ser også en del tilfeldig spredning i observasjonene, noe som gir mening da 
 attach(kc_houses_env_var_omit)
 ```
 
-
 ```{r}
 mod1 <- "price ~ bedrooms + bathrooms + sqft_living + sqft_living15 + sqft_lot + sqft_lot15 + sqft_above + floors + grade + yr_built + yr_renovated + waterfront + condition + view + year_month"
 ```
-
 
 ## ii. Huskarakteristika + distanse til cbd + tracts_var
 
@@ -408,7 +398,6 @@ mod1 <- "price ~ bedrooms + bathrooms + sqft_living + sqft_living15 + sqft_lot +
 mod2 <- "price ~ bedrooms + bathrooms + sqft_living + sqft_living15 + sqft_lot + sqft_lot15 + sqft_above + floors + grade + yr_built + yr_renovated + waterfront + condition + view + year_month + dist_cbd_km + linguist_2 + poverty_pe + POC_percen + unemploy_2 + sen_pop_pe + facilities + wastewater + traffic_pe + diesel + superfund + transporta + housing_pe + ozone + PM25 + toxic_rele + 
 hazardous_ + lead_perce + socio_perc"
 ```
-
 
 ## iii. Huskarakteristika + distanse til cbd + EHD
 
@@ -422,8 +411,6 @@ hedon2 <- lm(mod2, data = kc_houses_env_var_omit)
 hedon3 <- lm(mod3, data = kc_houses_env_var_omit)
 ```
 
-
-
 ```{r}
 huxreg("Hedon1" = hedon1, "Hedon2" = hedon2, "Hedon3" = hedon3, 
     error_format = "[{statistic}]",
@@ -432,13 +419,13 @@ huxreg("Hedon1" = hedon1, "Hedon2" = hedon2, "Hedon3" = hedon3,
 
 ***I .pdf-filen så har huxreg-tabellen lagt seg helt på slutten av dokumentet***
 
-
 Ved å sammenligne de tre hedoniske modellene vi har satt opp ser vi at *mod2* har en marginalt bedre forklaringskraft enn *mod3*.
 Vi velger derimot å jobbe videre med ***mod3***, da denne modellen har mindre variabler å ta hensyn til, samtidig som den er omtrent like forklarende som *mod2*.
 Variabelen *EHD_percen* er en "samlevariabel" som samler alle de miljømessige variablene fra *mod2*.
-I tillegg tar vi med inntektsgruppene, der *mid* er referansepunktet. 
+I tillegg tar vi med inntektsgruppene, der *mid* er referansepunktet.
 
 \newpage
+
 ### Plots
 
 ```{r, fig.width=3, fig.height=3}
@@ -457,7 +444,6 @@ hedon3 %>%
 ```
 
 # 7. Test av tidsdummyer
-
 
 ```{r}
 hedon1 %>% 
@@ -493,7 +479,7 @@ hedon3 %>%
 ```
 
 Ved å teste teste nullhypotesen om at det ikke er forskjell i salgspris basert på salgstidspunkt, så ser vi av F- og p-verdiene at vi kan forkaste $H_0$.
-Det vil si at vi bør beholde tidsdummyene, selv om mange av dem er individuelt usignifikante. 
+Det vil si at vi bør beholde tidsdummyene, selv om mange av dem er individuelt usignifikante.
 Med andre ord så er det forskjell i salgspris ved forskjellig salgstidspunkt.
 
 # 8. Spatial regresjon
@@ -516,7 +502,6 @@ kc_house_data_666 <- kc_house_data_666 %>%
            mid = inc_fam_med_per,
            high = inc_fam_high_per)
 ```
-
 
 ```{r}
 hedon3_seed <- lm(mod3, data = kc_house_data_666)
@@ -603,7 +588,6 @@ SEM_seed <- errorsarlm(mod3, data = kc_house_data_666, listw = kc_house_data_666
 summary(impacts(SDEM_seed), zstats = TRUE)
 ```
 
-
 ```{r}
 huxreg("SEM" = SEM_seed, "OLS" = hedon3_seed, 
     error_format = "[{statistic}]",
@@ -611,7 +595,6 @@ huxreg("SEM" = SEM_seed, "OLS" = hedon3_seed,
 ```
 
 ***I .pdf-filen har huxreg-tabellen lagt seg i slutten av dokumentet.***
-
 
 ```{r}
 LR.Sarlm(SDEM_seed, SEM_seed)
@@ -653,7 +636,6 @@ moran.test(residuals(SDEM_seed), listw = kc_house_data_666_W10)
 Her ser vi at vi fortsatt har noe romlig effekt, men som vist i grafen over er den nesten eliminert.
 
 # 9. Eget utvalg - Ellers repetisjon av del 8
-
 
 ```{r}
 set.seed(572)
@@ -697,20 +679,17 @@ moran.plot(log(kc_houses_env_var_omit_2000$price), listw = kc_house_data_2000_W1
 
 ```
 
-
 ```{r}
 kc_lagrange_3_2000 <- lm.LMtests(hedon3_2000, kc_house_data_2000_W, 
                test = "all")
 kc_lagrange_3_2000
 ```
 
-
 ```{r}
 kc_lagrange_10_2000 <- lm.LMtests(hedon3_2000, kc_house_data_2000_W10, 
                test = "all")
 kc_lagrange_10_2000
 ```
-
 
 ```{r}
 SDEM_2000 <- errorsarlm(mod3, data = kc_houses_env_var_omit_2000, listw = kc_house_data_2000_W, 
@@ -740,7 +719,6 @@ SEM_2000 <- errorsarlm(mod3, data = kc_houses_env_var_omit_2000, listw = kc_hous
 summary(impacts(SDEM_2000), zstats = TRUE)
 ```
 
-
 ```{r}
 huxreg("SEM" = SEM_2000, "OLS" = hedon3_2000, 
     error_format = "[{statistic}]",
@@ -748,7 +726,6 @@ huxreg("SEM" = SEM_2000, "OLS" = hedon3_2000,
 ```
 
 ***I .pdf-filen har huxreg-tabellen lagt seg i slutten av dokumentet.***
-
 
 ```{r}
 LR.Sarlm(SDEM_2000, SEM_2000)
@@ -779,7 +756,6 @@ moran.plot(residuals(SDEM_2000), listw = kc_house_data_2000_W10)
 moran.test(residuals(SDEM_2000), listw = kc_house_data_2000_W10)
 ```
 
-
 # 10. Konklusjon
 
 Ved å sammenligne resultatene fra det fulle datasettet med 21435 observasjoner med to utvalgsdatasett, **666** der hver *tract* har 5 observasjoner og **2000** som har et helt tilfeldig utvalg, ser vi i stor grad tilsvarende resultater.
@@ -789,4 +765,6 @@ Ellers ser vi at *SDEM*-modellen vil være den korrekte å benytte uavhengig av 
 
 # Referanser
 
-
+```{r, echo = FALSE}
+#siste
+```

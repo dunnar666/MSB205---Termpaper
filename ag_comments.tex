@@ -1,0 +1,197 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{ag comments}
+\author{}
+\date{\vspace{-2.5em}}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={ag comments},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\item
+  Dokumentet var reproduserbart. Flott!
+\item
+  pdf dokumentet er fint formatert. Bra
+\item
+  Dette kommer i reprise: «Når man samler inn data er det mest oppnåelig
+  å ha et tilfeldig utvalg. Datainnsamlingen i hedonisk
+  eiendomsverdi-studier fokuserer hovedsakelig på eneboliger.»
+\item
+  Grei gjennomgang av Bishop et al.
+\item
+  Ser dere bruker \texttt{attach()} mange mener dette bør ungås. Se
+  \url{https://www.r-bloggers.com/2011/05/to-attach-or-not-attach-that-is-the-question/}.
+  Så lenge dere jobber i \texttt{tidyverse} er det langt på veg
+  unødvendig.
+\item
+  Fin gjennomgang av kc\_tracts10\_env\_data versus
+  kc\_tracts10\_shore\_env\_var
+\item
+  Fin EDA fra Geoda, fin oppsummering av funn i EDA
+\item
+  Def. av mod2, mod3 etc. Lurt å bruke linjeskift i formula definisjonen
+  så slipper dere at linjen går langt ut til høyre
+\item
+  Variablene sqft\_living15 og sqft\_lot15 burde dere trolig droppet.
+  Som dere ser av dokumentasjonen er dette gjennomsnittet for de 15
+  nærmeste naboene. Vi tar hensyn til dette ved hhv 3 og 10 naboer
+\item
+  Ad «\textbf{I .pdf-filen så har huxreg-tabellen lagt seg helt på
+  slutten av dokumentet».} Når LaTeX ikke finner en god nok plassering
+  av en figur eller tabell havner den i float og havner til slutt i
+  dokumentet. Det er muligheter for et stykke på veg å presse LaTeX til
+  å plassere figur/tabell der den er (kan kreve at man må inn i .tex
+  filen). Ellers er en mulighet å bare la den flyte til slutten men
+  bruke referanse/kryssreferanse.
+\item
+  En liten kommentar til lm plottene ville gjort seg. Ser at det ser ut
+  til å være problem med heteroskedastisitet og også avvik fra
+  normalitet på residualene. Kan gi problemer med statistisk inferens.
+\item
+  Fin test på tidsdummy
+\item ~
+  \hypertarget{moran-i-statistic-standard-deviate-28.301-p-value}{%
+  \subsection{~Moran I statistic standard deviate = 28.301, p-value
+  \textless{}}\label{moran-i-statistic-standard-deviate-28.301-p-value}}
+
+  \#\# ~0.00000000000000022
+
+  Ser her problemet med \texttt{options(scipen\ =\ 999)} , men vi lever
+  i et fritt land ;-)
+\item
+  moran.plot(log(kc\_house\_data\_666\$price), listw =
+  kc\_house\_data\_666\_W, labels Bruker dere linjeskift i koden blir
+  den lettere å lese, f.eks
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moran.plot(log(kc\_house\_data\_666$price), listw = kc\_house\_data\_666\_W, labels = FALSE, pch = 20, cex = 0.3)}
+\FunctionTok{moran.plot}\NormalTok{(}
+    \FunctionTok{log}\NormalTok{(kc\_house\_data\_666}\SpecialCharTok{$}\NormalTok{price), }
+    \AttributeTok{listw =}\NormalTok{ kc\_house\_data\_666\_W, }
+    \AttributeTok{labels =} \ConstantTok{FALSE}\NormalTok{, }
+    \AttributeTok{pch =} \DecValTok{20}\NormalTok{, }
+    \AttributeTok{cex =} \FloatTok{0.3}
+\NormalTok{    )}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Ok Lagrange multiplikator test
+\item
+  Grei argumentasjon for «local». Kunne event gitt en referanse til
+  LeSage 2014
+\item
+  Impacts for SDEM flott gjort
+\item
+  Fin diskusjon romlige effekter i residualen mod2 versus mod3
+\item
+  Grei konklusjon
+\item
+  Litt mer inngående diskusjon av koeffisientene i Full, 2000 Seed og
+  666 Seed hadde vært en fordel. Er de konsistente eller skifter de
+  kraftig far modell til modell.\\
+\end{itemize}
+
+\end{document}

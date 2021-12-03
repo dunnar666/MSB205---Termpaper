@@ -1,0 +1,66 @@
+---
+title: "ag comments"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+-   Dokumentet var reproduserbart. Flott!
+
+-   pdf dokumentet er fint formatert. Bra
+
+-   Dette kommer i reprise: «Når man samler inn data er det
+    mest oppnåelig å ha et tilfeldig utvalg. Datainnsamlingen i hedonisk eiendomsverdi-studier
+    fokuserer hovedsakelig på eneboliger.»
+
+-   Grei gjennomgang av Bishop et al.
+
+-   Ser dere bruker `attach()` mange mener dette bør ungås. Se <https://www.r-bloggers.com/2011/05/to-attach-or-not-attach-that-is-the-question/>. Så lenge dere jobber i `tidyverse` er det langt på veg unødvendig.
+
+-   Fin gjennomgang av kc_tracts10_env_data versus kc_tracts10_shore_env_var
+
+-   Fin EDA fra Geoda, fin oppsummering av funn i EDA
+
+-   Def. av mod2, mod3 etc. Lurt å bruke linjeskift i formula definisjonen så slipper dere at linjen går langt ut til høyre
+
+-   Variablene sqft_living15 og sqft_lot15 burde dere trolig droppet. Som dere ser av dokumentasjonen er dette gjennomsnittet for de 15 nærmeste naboene. Vi tar hensyn til dette ved hhv 3 og 10 naboer
+
+-   Ad «**I .pdf-filen så har huxreg-tabellen lagt seg helt på slutten av dokumentet».** Når LaTeX ikke finner en god nok plassering av en figur eller tabell havner den i float og havner til slutt i dokumentet. Det er muligheter for et stykke på veg å presse LaTeX til å plassere figur/tabell der den er (kan kreve at man må inn i .tex filen). Ellers er en mulighet å bare la den flyte til slutten men bruke referanse/kryssreferanse.
+
+-   En liten kommentar til lm plottene ville gjort seg. Ser at det ser ut til å være problem med heteroskedastisitet og også avvik fra normalitet på residualene. Kan gi problemer med statistisk inferens.
+
+-   Fin test på tidsdummy
+
+-   ##  Moran I statistic standard deviate = 28.301, p-value \<
+    #\#  0.00000000000000022
+
+    Ser her problemet med `options(scipen = 999)` , men vi lever i et fritt land ;-)
+
+-   moran.plot(log(kc_house_data_666\$price), listw = kc_house_data_666_W, labels
+    Bruker dere linjeskift i koden blir den lettere å lese, f.eks
+
+    ```{r, eval = FALSE}
+    #moran.plot(log(kc_house_data_666$price), listw = kc_house_data_666_W, labels = FALSE, pch = 20, cex = 0.3)
+    moran.plot(
+        log(kc_house_data_666$price), 
+        listw = kc_house_data_666_W, 
+        labels = FALSE, 
+        pch = 20, 
+        cex = 0.3
+        )
+    ```
+
+-   Ok Lagrange multiplikator test
+
+-   Grei argumentasjon for «local». Kunne event gitt en referanse til LeSage 2014
+
+-   Impacts for SDEM flott gjort
+
+-   Fin diskusjon romlige effekter i residualen mod2 versus mod3
+
+-   Grei konklusjon
+
+-   Litt mer inngående diskusjon av koeffisientene i Full, 2000 Seed og 666 Seed hadde vært en fordel. Er de konsistente eller skifter de kraftig far modell til modell.
+    \
+
